@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap');
 
+:root {
+    --green-1: #2ECC40;
+    --green-2: #A3D9A5;
+    --green-3: #004B2B;
+    --white: #fdfdfd;
+    --grey: #2f2f2f;
+    --black: rgba(0, 0, 0, 0.8);
+}
+
 *{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 h2 h3 h4 p{
+    color: var(--black);
 }
 
 html {
@@ -11,6 +24,7 @@ html {
 
 body {
     margin: 0;
+    background-color: var(--white);
 }
 
 ::-webkit-scrollbar {
@@ -23,7 +37,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 60px;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -34,23 +48,21 @@ header {
 }
 
 header .logo {
-    width: 300px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color: #000;
+    color: var(--black);
 }
 
 header .logo img {
-    height: 60px;
-    width: 60px;
+    height: 70px;
 }
 
 header .logo h1 {
     margin: auto;
-    color: #FF4DD8;
+    color: var(--black);
 }
 
 .navbar {
@@ -69,7 +81,7 @@ header .logo h1 {
     justify-content: center;
     font-size: 16px;
     list-style: none;
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     margin: auto 10px;
     padding: 10px 10px;
@@ -78,20 +90,20 @@ header .logo h1 {
 
 header .menu .menu-item a {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
 header .menu .menu-item:hover {
-    color: #fff;
-    background-color: #9747FF;
+    color: var(--white);
+    background-color: var(--green-2);
 }
 
 header .menu .menu-item a:hover {
-    color: #fff;
+    color: var(--white);
 }
 
 .btn-open-account {
-    color: #000;
+    color: var(--black);
     justify-content: center;
     font-weight: bold;
     padding: 10px 20px;
@@ -100,8 +112,13 @@ header .menu .menu-item a:hover {
     cursor: pointer;
 }
 
+.btn-open-account a{
+    text-decoration: none;
+    color:var(--white);
+}
+
 .btn-open-account button {
-    background-color: #9747FF;
+    background-color: var(--green-3);
     height: 100%;
     width: 100%;
     margin: auto;
@@ -111,7 +128,7 @@ header .menu .menu-item a:hover {
 }
 
 .btn-open-account button:hover {
-    background-color: #c397fd;
+    background-color: var(--green-2);
     color: #fff;
     text-decoration: none;
 }
@@ -146,12 +163,12 @@ header .menu .menu-item a:hover {
     height: 1px;
     width: 200px;
     margin: auto 10px;
-    background-color: #9747FF;
+    background-color: var(--green-2);
 }
 
 .back-hero-text h3 {
-    font-size: small;
-    color: #9747FF;
+    font-size: medium;
+    color: var(--green-2);
 }
 
 .hero .hero-text {
@@ -168,7 +185,7 @@ header .menu .menu-item a:hover {
     font-size: 2.5rem;
     color: transparent;
     font-weight: 900;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
+    background: linear-gradient(90deg, var(--green-2) 0%, var(--green-1) 100%);
     -webkit-background-clip: text;
     position: relative;
 }
@@ -178,26 +195,16 @@ header .menu .menu-item a:hover {
     font-weight: regular;
 }
 
-.hero-text button {
-    background-color: #000;
-    color: #fff;
-    font-weight: normal;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    margin: 10px 0;
-}
 
-/* Cryto Section */
 
-.cryptos {
+/* Tramites Section */
+
+.tramites {
     align-items: center;
     height: 400px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
 }
-
 
 
 .carousel {
@@ -223,7 +230,7 @@ header .menu .menu-item a:hover {
     color: #fff;
 }
 
-.carousel-item .crypt-title {
+.carousel-item .tramites-title {
     width: 90%;
     display: flex;
     align-items: center;
@@ -242,7 +249,7 @@ header .menu .menu-item a:hover {
     font-weight: medium;
 }
 
-/*Price crytocurrency  */
+/*Price tramite  */
 .carousel-item h4 {
     width: 80%;
     margin: 0;
@@ -260,7 +267,7 @@ header .menu .menu-item a:hover {
 /* About Section */
 
 .about-section {
-    height: 540px;
+    height: 700px;
     width: 100%;
 }
 
@@ -285,7 +292,7 @@ header .menu .menu-item a:hover {
     font-size: 2.5rem;
     color: transparent;
     font-weight: 800;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
+    background: linear-gradient(90deg, var(--green-2) 0%, var(--green-1) 100%);
     -webkit-background-clip: text;
     position: relative;
 }
@@ -363,7 +370,7 @@ header .menu .menu-item a:hover {
     font-size: 2.5rem;
     color: transparent;
     font-weight: 800;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
+    background: linear-gradient(90deg, var(--green-2) 0%, var(--green-1) 100%);
     -webkit-background-clip: text;
     position: relative;
 }
@@ -377,7 +384,7 @@ header .menu .menu-item a:hover {
 }
 
 .feature-text button {
-    background-color: #9747FF;
+    font-size: medium;
 }
 
 /* help section */
@@ -402,7 +409,7 @@ header .menu .menu-item a:hover {
     font-size: 2.5rem;
     color: transparent;
     font-weight: 800;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
+    background: linear-gradient(90deg, var(--green-2) 0%, var(--green-1) 100%);
     -webkit-background-clip: text;
     position: relative;
     padding: 10px;
@@ -433,7 +440,7 @@ header .menu .menu-item a:hover {
     font-size: 2.5rem;
     color: transparent;
     font-weight: 800;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
+    background: linear-gradient(90deg, var(--green-2) 0%, var(--green-1) 100%);
     -webkit-background-clip: text;
 }
 
@@ -473,17 +480,17 @@ header .menu .menu-item a:hover {
     font-size: 2.5rem;
     color: transparent;
     font-weight: 800;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
+    background: linear-gradient(90deg, var(--green-2) 0%, var(--green-1) 100%);
     -webkit-background-clip: text;
     position: relative;
     padding: 10px;
-    padding-left: 40px;
+    padding-left: 130px;
     margin: auto;
 }
 
 .community-section p {
     font-size: 1rem;
-    font-weight: regular;
+    font-weight: medium;
     width: 80%;
     margin: auto;
     margin-top: 30px;
@@ -506,7 +513,7 @@ header .menu .menu-item a:hover {
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 350px;
+    height: 400px;
     padding: 10px;
     background-color: #000;
     border-radius: 1rem;
@@ -532,7 +539,7 @@ header .menu .menu-item a:hover {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(151, 71, 255, 0.459);
+    background-color: var(--green-2);
     color: rgb(0, 0, 0);
 }
 
@@ -548,48 +555,37 @@ header .menu .menu-item a:hover {
 
 /* Footer */
 
-.footer-section {
+footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:center;
     width: 100%;
-    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-footer img {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-}
-
-footer h1 {
-    font-size: 2.5rem;
-    color: transparent;
-    font-weight: 800;
-    background: linear-gradient(90deg, #9747FF 0%, #FF4DD8 100%);
-    -webkit-background-clip: text;
-    position: relative;
-    padding: 10px;
-    padding-left: 40px;
+.footer-text {
+    width: 30%;
     margin: auto;
 }
 
-footer p {
-    font-size: 1rem;
-    font-weight: regular;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.footer-text p {
+    font-size: large;
+    font-weight: bold;
+    padding-left: 100px;
 }
 
-.footer-links ul li {
-    list-style-type: none;
-    text-decoration: none;
+.footer-social {
+    width: 70%;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-social ul li {
     list-style: none;
     text-decoration: none;
+    margin: auto;
 }
