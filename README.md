@@ -1,2 +1,2 @@
-# LandingPage-PokeSwap
+# LandingPage
 Landing Page
